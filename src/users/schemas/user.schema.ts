@@ -6,8 +6,12 @@ export class User {
   @Prop({
     required: true,
     unique: true,
+    lowercase: true,
+    trim: true,
+    minlength: 2,
+    maxlength: 20,
   })
-  email: string;
+  name: string;
 
   @Prop({
     select: false,
