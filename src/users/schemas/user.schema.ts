@@ -14,6 +14,12 @@ export class User {
     required: true,
   })
   passwordHash: string;
+
+  @Prop()
+  createdAt: Date;
+
+  @Prop()
+  updatedAt: Date;
 }
 
 export type UserDocument = User & Document;

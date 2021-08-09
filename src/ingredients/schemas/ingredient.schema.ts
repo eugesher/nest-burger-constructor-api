@@ -38,6 +38,12 @@ export class Ingredient extends Valuable {
     set: Valuable.setPrice,
   })
   price: number;
+
+  @Prop()
+  createdAt: Date;
+
+  @Prop()
+  updatedAt: Date;
 }
 
 export type IngredientDocument = Ingredient & Document;

@@ -37,6 +37,12 @@ export class Burger extends Valuable {
     required: true,
   })
   owner: User;
+
+  @Prop()
+  createdAt: Date;
+
+  @Prop()
+  updatedAt: Date;
 }
 
 export type BurgerDocument = Burger & Document;

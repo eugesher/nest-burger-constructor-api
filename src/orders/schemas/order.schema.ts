@@ -31,6 +31,12 @@ export class Order extends Valuable {
     required: true,
   })
   owner: User;
+
+  @Prop()
+  createdAt: Date;
+
+  @Prop()
+  updatedAt: Date;
 }
 
 export type OrderDocument = Order & Document;
